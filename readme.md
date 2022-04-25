@@ -10,3 +10,5 @@ Expected concepts / library usage:
 4. Dagger : https://medium.com/@iammert/new-android-injector-with-dagger-2-part-1-8baa60152abe
 5. Retrofit : https://square.github.io/retrofit/
 6. Shared Preferences
+7. View Binding : https://developer.android.com/topic/libraries/view-binding
+8. Coroutines : https://developer.android.com/kotlin/coroutines
