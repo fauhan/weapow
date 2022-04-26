@@ -1,8 +1,7 @@
 package com.inpows.weapow.domain
 
-import com.inpows.weapow.domain.interactor.GetWeatherInfoInteractor
-import com.inpows.weapow.domain.interactor.LoadCityInteractor
-import com.inpows.weapow.domain.repository.local.CityRepository
+import com.inpows.weapow.domain.city.interactor.LoadCityInteractor
+import com.inpows.weapow.domain.city.repository.CityRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import org.junit.Before
 import org.junit.Rule

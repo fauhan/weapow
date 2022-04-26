@@ -2,7 +2,7 @@ package com.inpows.weapow.data.di
 
 import android.content.Context
 import com.inpows.weapow.data.service.local.SharedPrefs
-import com.inpows.weapow.data.source.local.changeCity.LocalChangeCityEntityData
+import com.inpows.weapow.data.city.source.LocalChangeCityEntityData
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

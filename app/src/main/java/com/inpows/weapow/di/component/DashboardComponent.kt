@@ -2,7 +2,7 @@ package com.inpows.weapow.di.component
 
 import com.inpows.weapow.di.PerActivity
 import com.inpows.weapow.di.modules.DashboardModule
-import com.inpows.weapow.ui.dashboard.DashboardActivity
+import com.inpows.weapow.dashboard.DashboardActivity
 import dagger.Component
 
 @PerActivity

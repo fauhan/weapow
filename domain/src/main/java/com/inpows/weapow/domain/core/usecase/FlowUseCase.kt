@@ -4,7 +4,7 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flowOn
-import com.inpows.weapow.domain.model.Result
+import com.inpows.weapow.domain.dashboard.model.Result
 
 abstract class FlowUseCase<in P, R : Any>(
     private val coroutineDispatcher: CoroutineDispatcher

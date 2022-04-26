@@ -2,8 +2,7 @@ package com.inpows.weapow.di.component
 
 import com.inpows.weapow.di.PerActivity
 import com.inpows.weapow.di.modules.SelectedCityModules
-import com.inpows.weapow.ui.changeCity.ChangeCityActivity
-import com.inpows.weapow.ui.changeCity.fragment.SelectedCityFragment
+import com.inpows.weapow.city.fragment.SelectedCityFragment
 import dagger.Component
 
 

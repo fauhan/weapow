@@ -3,11 +3,11 @@ package com.inpows.weapow.di.modules
 import android.app.Application
 import android.content.Context
 import com.inpows.weapow.data.JobExecutor
-import com.inpows.weapow.data.repository.changeCity.CityEntityRepository
-import com.inpows.weapow.data.repository.weatherInfo.WeatherInfoEntityRepository
+import com.inpows.weapow.data.city.repository.CityEntityRepository
+import com.inpows.weapow.data.dashboard.repository.WeatherInfoEntityRepository
 import com.inpows.weapow.domain.executor.ThreadExecutor
-import com.inpows.weapow.domain.repository.local.CityRepository
-import com.inpows.weapow.domain.repository.network.WeatherInfoRepository
+import com.inpows.weapow.domain.city.repository.CityRepository
+import com.inpows.weapow.domain.dashboard.repository.WeatherInfoRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

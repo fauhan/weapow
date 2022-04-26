@@ -2,8 +2,8 @@ package com.inpows.weapow.di.modules
 
 import com.inpows.weapow.di.PerActivity
 import com.inpows.weapow.domain.DefaultDispatcher
-import com.inpows.weapow.presenter.changeCity.SelectedCityFragmentPresenter
-import com.inpows.weapow.presenter.changeCity.SelectedCityContract
+import com.inpows.weapow.city.presenter.SelectedCityFragmentPresenter
+import com.inpows.weapow.city.presenter.SelectedCityContract
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.CoroutineDispatcher

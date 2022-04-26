@@ -1,13 +1,13 @@
 package com.inpows.weapow.data
 
-import com.inpows.weapow.data.dto.result.CoordinateDto
-import com.inpows.weapow.data.dto.result.WeatherDto
-import com.inpows.weapow.data.dto.result.weather.*
-import com.inpows.weapow.data.mapper.toWeatherInfo
-import com.inpows.weapow.domain.model.CloudsDomain
-import com.inpows.weapow.domain.model.CoordinateDomain
-import com.inpows.weapow.domain.model.MainDomain
-import com.inpows.weapow.domain.model.WeatherRootDomain
+import com.inpows.weapow.data.dashboard.model.CoordinateDto
+import com.inpows.weapow.data.dashboard.model.WeatherDto
+import com.inpows.weapow.data.dashboard.model.weather.*
+import com.inpows.weapow.data.dashboard.mapper.toWeatherInfo
+import com.inpows.weapow.domain.dashboard.model.CloudsDomain
+import com.inpows.weapow.domain.dashboard.model.CoordinateDomain
+import com.inpows.weapow.domain.dashboard.model.MainDomain
+import com.inpows.weapow.domain.dashboard.model.WeatherRootDomain
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
@@ -129,12 +129,14 @@ class WeatherDtoInfoMapperTest {
                 lat = STATIC_COORDINATE_LAT
             )
         )
-        Mockito.`when`(weatherRootDto.weatherDto).thenReturn(listOf(WeatherDto(
+        Mockito.`when`(weatherRootDto.weatherDto).thenReturn(listOf(
+            WeatherDto(
             id = STATIC_WEATHER_ID,
             main = STATIC_WEATHER_MAIN,
             description = STATIC_WEATHER_DESCRIPTION,
             icon = STATIC_WEATHER_ICON
-        )))
+        )
+        ))
         Mockito.`when`(weatherRootDto.base).thenReturn(STATIC_BASE)
         Mockito.`when`(weatherRootDto.mainDto).thenReturn(
             MainDto(

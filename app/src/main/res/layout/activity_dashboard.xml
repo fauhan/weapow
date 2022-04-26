@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:theme="@style/Theme.WeaPow"
-    tools:context=".ui.dashboard.DashboardActivity">
+    tools:context=".dashboard.DashboardActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/llc_top_bar"

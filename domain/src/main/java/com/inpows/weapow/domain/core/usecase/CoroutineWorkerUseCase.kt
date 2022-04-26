@@ -1,6 +1,6 @@
 package com.inpows.weapow.domain.core.usecase
 
-import com.inpows.weapow.domain.model.Result
+import com.inpows.weapow.domain.dashboard.model.Result
 
 abstract class CoroutineWorkerUseCase<in P, R : Any> {
 

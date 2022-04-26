@@ -1,7 +1,7 @@
 package com.inpows.weapow.domain
 
-import com.inpows.weapow.domain.interactor.GetWeatherInfoInteractor
-import com.inpows.weapow.domain.repository.network.WeatherInfoRepository
+import com.inpows.weapow.domain.dashboard.interactor.GetWeatherInfoInteractor
+import com.inpows.weapow.domain.dashboard.repository.WeatherInfoRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import org.junit.Before
 import org.junit.Rule

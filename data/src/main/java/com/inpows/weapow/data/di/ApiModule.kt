@@ -4,7 +4,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.inpows.weapow.data.BuildConfig
 import com.inpows.weapow.data.service.network.WeatherAPI
-import com.inpows.weapow.data.source.remote.weatherInfo.NetworkWeatherInfoEntityData
+import com.inpows.weapow.data.dashboard.source.NetworkWeatherInfoEntityData
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

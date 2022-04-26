@@ -2,9 +2,8 @@ package com.inpows.weapow.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewbinding.ViewBinding
 import com.inpows.weapow.di.component.ApplicationComponent
-import com.inpows.weapow.ui.MVPApp
+import com.inpows.weapow.MVPApp
 
 abstract class BaseActivity: AppCompatActivity(), PresenterHandler {
 

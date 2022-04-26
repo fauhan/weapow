@@ -6,9 +6,9 @@ import com.inpows.weapow.base.BaseActivity
 import com.inpows.weapow.data.di.ApiModule
 import com.inpows.weapow.di.modules.ApplicationModules
 import com.inpows.weapow.domain.executor.ThreadExecutor
-import com.inpows.weapow.domain.repository.local.CityRepository
-import com.inpows.weapow.domain.repository.network.WeatherInfoRepository
-import com.inpows.weapow.ui.MVPApp
+import com.inpows.weapow.domain.city.repository.CityRepository
+import com.inpows.weapow.domain.dashboard.repository.WeatherInfoRepository
+import com.inpows.weapow.MVPApp
 import dagger.Component
 import javax.inject.Singleton
 

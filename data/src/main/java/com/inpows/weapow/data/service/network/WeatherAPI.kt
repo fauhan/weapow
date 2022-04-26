@@ -1,6 +1,6 @@
 package com.inpows.weapow.data.service.network
 
-import com.inpows.weapow.data.dto.result.weather.WeatherRootDto
+import com.inpows.weapow.data.dashboard.model.weather.WeatherRootDto
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

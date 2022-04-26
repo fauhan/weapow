@@ -2,8 +2,8 @@ package com.inpows.weapow.di.modules
 
 import com.inpows.weapow.di.PerActivity
 import com.inpows.weapow.domain.DefaultDispatcher
-import com.inpows.weapow.presenter.dashboard.DashboardActivityPresenter
-import com.inpows.weapow.presenter.dashboard.WeatherInfoContract
+import com.inpows.weapow.dashboard.presenter.DashboardActivityPresenter
+import com.inpows.weapow.dashboard.presenter.WeatherInfoContract
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.CoroutineDispatcher

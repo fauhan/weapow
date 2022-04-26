@@ -1,6 +1,6 @@
 package com.inpows.weapow.data.core
 
-import com.inpows.weapow.domain.model.CityDomain
+import com.inpows.weapow.domain.city.model.CityDomain
 
 
 /**
