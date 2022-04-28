@@ -9,8 +9,8 @@ import javax.inject.Inject
 class WeatherInfoEntityRepository @Inject constructor(
     private val networkEntityData: NetworkWeatherInfoEntityData
 ) : WeatherInfoRepository {
-    override fun getWeather(cityName: String): Flow<WeatherRootDomain> {
-        return networkEntityData.getWeatherInfo(cityName)
+    override fun getWeather(cityId: String): Flow<WeatherRootDomain> {
+        return networkEntityData.getWeatherInfo(cityId)
     }
 
 }

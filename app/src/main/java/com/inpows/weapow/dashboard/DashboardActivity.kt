@@ -23,6 +23,7 @@ import com.inpows.weapow.domain.dashboard.model.WeatherRootDomain
 import com.inpows.weapow.dashboard.presenter.WeatherInfoContract
 import com.inpows.weapow.dashboard.adapter.WeatherDetailAdapter
 import com.inpows.weapow.city.ChangeCityActivity
+import com.inpows.weapow.dashboard.utils.WeatherUtils
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -99,55 +100,6 @@ class DashboardActivity : BaseActivity(), WeatherInfoContract.View {
         }
     }
 
-    private fun setWeatherAssetByType(iconType: String): String{
-        return when (iconType) {
-            WeatherTypes.CLEAR_SKY_DAY -> {
-                "ic_sunny_01d.json"
-            }
-            WeatherTypes.CLEAR_SKY_NIGHT -> {
-                "ic_moon_01n.json"
-            }
-            WeatherTypes.FEW_CLOUDS_DAY -> {
-                "ic_few_clouds_02d.json"
-            }
-            WeatherTypes.FEW_CLOUDS_NIGHT -> {
-                "ic_few_clouds_02n.json"
-            }
-            WeatherTypes.SCATTERED_CLOUD_DAY -> {
-                "ic_scattered_clouds_03d.json"
-            }
-            WeatherTypes.SCATTERED_CLOUD_NIGHT -> {
-                "ic_scattered_clouds_03n.json"
-            }
-            WeatherTypes.BROKEN_CLOUDS_DAY -> {
-                "ic_broken_clouds_04d.json"
-            }
-            WeatherTypes.BROKEN_CLOUDS_NIGHT -> {
-                "ic_broken_clouds_04n.json"
-            }
-            WeatherTypes.SHOWER_RAIN_DAY -> {
-                "ic_shower_rain_09d.json"
-            }
-            WeatherTypes.SHOWER_RAIN_NIGHT -> {
-                "ic_shower_rain_09n.json"
-            }
-            WeatherTypes.RAIN_DAY -> {
-                "ic_rain_10d.json"
-            }
-            WeatherTypes.RAIN_NIGHT -> {
-                "ic_rain_10n.json"
-            }
-            WeatherTypes.THUNDERSTORM_DAY-> {
-                "ic_thunderstorm_11d.json"
-            }
-            WeatherTypes.THUNDERSTORM_NIGHT-> {
-                "ic_thunderstorm_11n.json"
-            }
-            else -> {
-                "ic_splash.json"
-            }
-        }
-    }
 
     private fun loadListWeather(weatherRoot: WeatherRootDomain): List<WeatherItem>{
         return listOf(
@@ -233,7 +185,7 @@ class DashboardActivity : BaseActivity(), WeatherInfoContract.View {
     override fun onSuccessGetWeatherInfo(weatherRootDomain: WeatherRootDomain) {
         binding.tvCurrentDate.text = resources.getString(R.string.value_current_date, DateConverter().convertLongToDate(weatherRootDomain.dt, weatherRootDomain.timezone.toString()))
         if(weatherRootDomain.weather.isNotEmpty()){
-            lottieAnimationViewWeather.setAnimation(setWeatherAssetByType(weatherRootDomain.weather[0].icon))
+            lottieAnimationViewWeather.setAnimation(WeatherUtils.setWeatherAssetByType(weatherRootDomain.weather[0].icon))
         } else {
             lottieAnimationViewWeather.setAnimation("ic_splash.json")
         }
